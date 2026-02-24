@@ -1,0 +1,38 @@
+/* -------- Element Selector -------- */
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: blue;
+}
+
+
+/* -------- Class Selector -------- */
+.box {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: lightgray;
+}
+
+.text-green {
+    color: green;
+}
+
+
+/* -------- ID Selector -------- */
+#special {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+/* -------- Grouping Selector -------- */
+h2, h3 {
+    color: purple;
+    text-align: center;
+}

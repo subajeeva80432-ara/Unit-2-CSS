@@ -1,0 +1,134 @@
+/* =========================================
+   CSS VARIABLES & ORGANIZATION
+   --colors, --spacing, --font, reusability
+========================================= */
+
+/* Root Variables Declaration */
+:root {
+    /* Colors */
+    --primary-color: #4e73df;
+    --secondary-color: #1cc88a;
+    --accent-color: #ff9800;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+
+    /* Font */
+    --font-family: 'Arial, sans-serif';
+    --base-font-size: 16px;
+
+    /* Spacing */
+    --small-spacing: 8px;
+    --medium-spacing: 16px;
+    --large-spacing: 32px;
+
+    /* Border radius */
+    --radius-small: 4px;
+    --radius-medium: 8px;
+    --radius-large: 12px;
+
+    /* Shadow */
+    --box-shadow-light: 0 4px 10px rgba(0,0,0,0.1);
+    --box-shadow-medium: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* =========================================
+   Base Styles
+========================================= */
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--medium-spacing);
+}
+
+/* Paragraph */
+p {
+    margin-bottom: var(--medium-spacing);
+}
+
+/* =========================================
+   Buttons Reusable
+========================================= */
+
+.btn {
+    padding: var(--small-spacing) var(--medium-spacing);
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--radius-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   Card Component
+========================================= */
+
+.card {
+    background-color: white;
+    padding: var(--medium-spacing);
+    border-radius: var(--radius-large);
+    box-shadow: var(--box-shadow-medium);
+    margin-bottom: var(--large-spacing);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* =========================================
+   Containers
+========================================= */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: var(--medium-spacing);
+}
+
+/* =========================================
+   Utility Classes
+========================================= */
+
+.text-center {
+    text-align: center;
+}
+
+.mb-small {
+    margin-bottom: var(--small-spacing);
+}
+
+.mb-medium {
+    margin-bottom: var(--medium-spacing);
+}
+
+.mb-large {
+    margin-bottom: var(--large-spacing);
+}
+
+/* =========================================
+   Responsive Example
+========================================= */
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: var(--small-spacing);
+    }
+}

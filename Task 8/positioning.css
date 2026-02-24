@@ -1,0 +1,71 @@
+/* ===================================== */
+/*           CSS POSITIONING             */
+/* ===================================== */
+
+
+/* -------- Common Box Style -------- */
+.box {
+    width: 150px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    margin: 10px;
+}
+
+
+/* -------- 1️⃣ Static (Default) -------- */
+/* Default position – top, left will NOT work */
+.static-box {
+    position: static;
+    background-color: gray;
+}
+
+
+/* -------- 2️⃣ Relative -------- */
+/* Moves relative to its original position */
+.relative-box {
+    position: relative;
+    top: 20px;      /* Moves down */
+    left: 30px;     /* Moves right */
+    background-color: blue;
+}
+
+
+/* -------- 3️⃣ Absolute -------- */
+/* Positioned relative to nearest positioned parent */
+.parent {
+    position: relative;   /* Important for absolute child */
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: red;
+}
+
+
+/* -------- 4️⃣ Fixed -------- */
+/* Stays fixed to viewport */
+.fixed-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+}
+
+
+/* -------- 5️⃣ Sticky -------- */
+/* Acts like relative, then sticks on scroll */
+.sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: purple;
+    padding: 10px;
+    color: white;
+}

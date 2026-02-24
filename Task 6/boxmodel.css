@@ -1,0 +1,119 @@
+/* ===================================== */
+/*         BOX MODEL & DISPLAY          */
+/* ===================================== */
+
+
+/* -------- 1️⃣ Box Sizing -------- */
+/* Makes width include padding & border */
+* {
+    box-sizing: border-box;
+}
+
+
+/* -------- 2️⃣ Basic Box Model Example -------- */
+
+.box {
+    width: 300px;
+
+    padding: 20px;              /* Space inside box */
+    border: 5px solid black;    /* Border around content */
+    margin: 30px;               /* Space outside box */
+
+    background-color: lightblue;
+}
+
+
+/* -------- 3️⃣ Individual Margin -------- */
+
+.margin-example {
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+
+/* -------- 4️⃣ Individual Padding -------- */
+
+.padding-example {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+
+/* -------- 5️⃣ Border Variations -------- */
+
+.border-example {
+    border-width: 4px;
+    border-style: dashed;
+    border-color: red;
+}
+
+
+/* -------- 6️⃣ Outline (Outside Border) -------- */
+
+.outline-example {
+    border: 3px solid black;
+    outline: 4px solid green;     /* Outside border */
+    outline-offset: 5px;          /* Gap between border & outline */
+}
+
+
+/* -------- 7️⃣ Display Types -------- */
+
+/* Block - takes full width */
+.block-example {
+    display: block;
+    width: 200px;
+    background-color: lightcoral;
+    margin: 10px 0;
+}
+
+/* Inline - no width/height control */
+.inline-example {
+    display: inline;
+    background-color: lightgreen;
+}
+
+/* Inline-block - width + inline behaviour */
+.inline-block-example {
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    background-color: lightskyblue;
+    margin: 10px;
+}
+
+/* None - hides element */
+.hidden-example {
+    display: none;
+}
+
+
+/* -------- 8️⃣ Visual Layout Exercise -------- */
+
+/* Simple card layout */
+.card {
+    width: 250px;
+    padding: 15px;
+    border: 2px solid #333;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Container layout */
+.container {
+    width: 80%;
+    margin: 0 auto;      /* Center horizontally */
+}
+
+/* Box alignment practice */
+.layout-box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px;
+    background-color: orange;
+}

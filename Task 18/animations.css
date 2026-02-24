@@ -1,0 +1,157 @@
+/* =========================================
+   CSS ANIMATIONS
+   @keyframes | animation properties
+========================================= */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   1️⃣ Fade In Animation
+========================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-box {
+    width: 200px;
+    height: 100px;
+    background-color: #4e73df;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+/* =========================
+   2️⃣ Slide In Animation
+========================= */
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-box {
+    width: 200px;
+    height: 100px;
+    background-color: #1cc88a;
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+/* =========================
+   3️⃣ Bounce Animation (Infinite)
+========================= */
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.bounce-box {
+    width: 150px;
+    height: 150px;
+    background-color: #f6c23e;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+/* =========================
+   4️⃣ Rotate Animation
+========================= */
+
+@keyframes rotateBox {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-box {
+    width: 120px;
+    height: 120px;
+    background-color: #e74a3b;
+    animation: rotateBox 3s linear infinite;
+}
+
+/* =========================
+   5️⃣ Pulse Animation
+========================= */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse-btn {
+    padding: 12px 20px;
+    background-color: #6610f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* =========================
+   6️⃣ Color Changing Background
+========================= */
+
+@keyframes colorChange {
+    0% {
+        background-color: #ff6b6b;
+    }
+    50% {
+        background-color: #6bcB77;
+    }
+    100% {
+        background-color: #4d96ff;
+    }
+}
+
+.color-box {
+    width: 200px;
+    height: 100px;
+    animation: colorChange 4s ease-in-out infinite alternate;
+}
+
+/* =========================
+   Animation Delay & Direction
+========================= */
+
+.delayed-box {
+    width: 180px;
+    height: 100px;
+    background-color: #20c997;
+    animation: slideIn 2s ease forwards;
+    animation-delay: 1s;
+    animation-direction: normal;
+}

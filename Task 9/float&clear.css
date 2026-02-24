@@ -1,0 +1,105 @@
+/* ===================================== */
+/*         FLOAT & CLEAR CONCEPT         */
+/* ===================================== */
+
+
+/* -------- 1️⃣ Basic Float -------- */
+
+/* Float left */
+.float-left {
+    float: left;
+    width: 150px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 10px;
+}
+
+/* Float right */
+.float-right {
+    float: right;
+    width: 150px;
+    height: 100px;
+    background-color: lightcoral;
+    margin: 10px;
+}
+
+
+/* -------- 2️⃣ Float Layout Example -------- */
+
+/* Simple 2-column layout */
+.sidebar {
+    float: left;
+    width: 30%;
+    background-color: #ddd;
+    padding: 15px;
+}
+
+.content {
+    float: left;
+    width: 70%;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+
+/* -------- 3️⃣ Clear Property -------- */
+
+/* Prevent element from wrapping around floated elements */
+.clear-left {
+    clear: left;
+}
+
+.clear-right {
+    clear: right;
+}
+
+.clear-both {
+    clear: both;
+}
+
+
+/* -------- 4️⃣ Problem Without Clearfix -------- */
+/* Parent height collapses when children are floated */
+
+
+/* -------- 5️⃣ Clearfix (Modern & Best Method) -------- */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* Usage:
+   Add class="clearfix" to parent container
+   So parent wraps floated children properly
+*/
+
+
+/* -------- 6️⃣ Alternative Clearfix Method -------- */
+
+.clearfix-alt {
+    overflow: auto;
+}
+
+
+/* -------- 7️⃣ Navigation Layout Example -------- */
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}

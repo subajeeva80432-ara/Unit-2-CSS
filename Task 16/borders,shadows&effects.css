@@ -1,0 +1,139 @@
+/* ======================================
+   BORDERS, SHADOWS & EFFECTS
+   border-radius | box-shadow | outline | opacity
+====================================== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Box */
+.box {
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #4e73df;
+    color: white;
+    border: 3px solid #2e59d9;
+}
+
+/* =========================
+   Border Radius
+========================= */
+
+/* Rounded corners */
+.rounded {
+    border-radius: 15px;
+}
+
+/* Fully circular */
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #1cc88a;
+}
+
+/* Different radius on each corner */
+.custom-radius {
+    border-radius: 20px 5px 30px 10px;
+}
+
+/* =========================
+   Box Shadow Effects
+========================= */
+
+/* Simple shadow */
+.shadow-light {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Strong shadow */
+.shadow-strong {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Inner shadow */
+.shadow-inner {
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover shadow effect */
+.hover-shadow {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+/* =========================
+   Outline Effects
+========================= */
+
+/* Simple outline */
+.outline-box {
+    outline: 3px solid #f6c23e;
+    outline-offset: 5px;
+}
+
+/* Focus outline effect */
+.input-field {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.input-field:focus {
+    outline: 3px solid #36b9cc;
+    outline-offset: 3px;
+}
+
+/* =========================
+   Opacity Effects
+========================= */
+
+/* Transparent box */
+.opacity-low {
+    opacity: 0.5;
+}
+
+/* Slight transparency */
+.opacity-medium {
+    opacity: 0.8;
+}
+
+/* Hover opacity effect */
+.hover-opacity {
+    transition: opacity 0.3s ease;
+}
+
+.hover-opacity:hover {
+    opacity: 0.6;
+}
+
+/* =========================
+   Combined Effects Example
+========================= */
+
+.card {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}

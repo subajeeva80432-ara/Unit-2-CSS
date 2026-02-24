@@ -1,0 +1,110 @@
+/* ===================================== */
+/*               CSS GRID                */
+/* ===================================== */
+
+
+/* -------- 1️⃣ Basic Grid Container -------- */
+
+.grid-container {
+    display: grid;
+
+    /* 3 Columns */
+    grid-template-columns: 200px 1fr 200px;
+
+    /* 2 Rows */
+    grid-template-rows: 100px 300px;
+
+    gap: 20px;   /* Space between rows & columns */
+
+    padding: 20px;
+    border: 3px solid black;
+}
+
+
+/* -------- 2️⃣ Grid Items -------- */
+
+.grid-item {
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===================================== */
+/*         GRID TEMPLATE AREAS          */
+/* ===================================== */
+
+.layout-container {
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 300px 60px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Assign areas */
+
+.header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ddd;
+}
+
+.main {
+    grid-area: main;
+    background-color: #f4f4f4;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+}
+
+
+/* ===================================== */
+/*         AUTO-FIT & AUTO-FILL         */
+/* ===================================== */
+
+/* Responsive Grid using auto-fit */
+.auto-fit-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Responsive Grid using auto-fill */
+.auto-fill-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Common Box Style for auto grids */
+.auto-box {
+    background-color: orange;
+    padding: 40px;
+    text-align: center;
+    font-weight: bold;
+}

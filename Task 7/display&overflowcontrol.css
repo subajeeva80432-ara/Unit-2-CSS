@@ -1,0 +1,100 @@
+/* ===================================== */
+/*        DISPLAY & OVERFLOW CONTROL     */
+/* ===================================== */
+
+
+/* -------- 1️⃣ DISPLAY TYPES -------- */
+
+/* Block - takes full width */
+.block-example {
+    display: block;
+    width: 200px;
+    height: 80px;
+    background-color: lightcoral;
+    margin: 10px 0;
+}
+
+
+/* Inline - no width/height control */
+.inline-example {
+    display: inline;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+
+/* Inline-Block - inline flow + width control */
+.inline-block-example {
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    background-color: lightskyblue;
+    margin: 10px;
+}
+
+
+/* None - completely hides element */
+.hidden-example {
+    display: none;
+}
+
+
+
+/* -------- 2️⃣ OVERFLOW PROPERTIES -------- */
+
+/* Visible (default) */
+.overflow-visible {
+    width: 200px;
+    height: 80px;
+    border: 2px solid black;
+    overflow: visible;
+}
+
+
+/* Hidden - extra content cut */
+.overflow-hidden {
+    width: 200px;
+    height: 80px;
+    border: 2px solid red;
+    overflow: hidden;
+}
+
+
+/* Scroll - always show scrollbars */
+.overflow-scroll {
+    width: 200px;
+    height: 80px;
+    border: 2px solid blue;
+    overflow: scroll;
+}
+
+
+/* Auto - scroll only if needed */
+.overflow-auto {
+    width: 200px;
+    height: 80px;
+    border: 2px solid green;
+    overflow: auto;
+}
+
+
+/* -------- 3️⃣ Direction Control -------- */
+
+/* Horizontal scroll only */
+.overflow-x-example {
+    width: 200px;
+    height: 80px;
+    border: 2px solid purple;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+
+/* Vertical scroll only */
+.overflow-y-example {
+    width: 200px;
+    height: 80px;
+    border: 2px solid orange;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

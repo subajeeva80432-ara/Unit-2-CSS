@@ -1,0 +1,82 @@
+/* ===================================== */
+/*        COLORS & BACKGROUNDS          */
+/* ===================================== */
+
+
+/* -------- 1️⃣ COLOR VALUES -------- */
+
+/* HEX Color */
+.hex-color {
+    color: #ff5733;   /* Orange shade */
+}
+
+/* RGB Color */
+.rgb-color {
+    color: rgb(0, 128, 255);   /* Blue shade */
+}
+
+/* HSL Color */
+.hsl-color {
+    color: hsl(120, 60%, 40%);  /* Green shade */
+}
+
+
+/* -------- 2️⃣ BACKGROUND COLOR -------- */
+
+.bg-color {
+    background-color: #f4f4f4;  /* Light gray */
+    padding: 20px;
+}
+
+
+/* -------- 3️⃣ BACKGROUND IMAGE -------- */
+
+.bg-image {
+    background-image: url("background.jpg");  /* Add your image path */
+    height: 300px;
+    background-repeat: no-repeat;   /* No repeat */
+    background-position: center;    /* Center image */
+    background-size: cover;         /* Cover full area */
+}
+
+
+/* -------- 4️⃣ BACKGROUND REPEAT OPTIONS -------- */
+
+.repeat-example {
+    background-image: url("pattern.png");
+    background-repeat: repeat;      /* repeat | no-repeat | repeat-x | repeat-y */
+    height: 200px;
+}
+
+
+/* -------- 5️⃣ BACKGROUND ATTACHMENT -------- */
+
+.fixed-bg {
+    background-image: url("background.jpg");
+    background-attachment: fixed;   /* scroll | fixed */
+    background-size: cover;
+    height: 400px;
+}
+
+
+/* -------- 6️⃣ GRADIENT BACKGROUNDS -------- */
+
+/* Linear Gradient */
+.linear-gradient {
+    background: linear-gradient(to right, red, yellow);
+    height: 200px;
+}
+
+/* Radial Gradient */
+.radial-gradient {
+    background: radial-gradient(circle, blue, white);
+    height: 200px;
+}
+
+
+/* -------- 7️⃣ Multiple Background Properties Shorthand -------- */
+
+.shorthand-bg {
+    background: url("background.jpg") no-repeat center/cover;
+    height: 300px;
+}

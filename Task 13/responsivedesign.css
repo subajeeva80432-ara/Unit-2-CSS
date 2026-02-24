@@ -1,0 +1,71 @@
+/* ===================================== */
+/*        RESPONSIVE DESIGN BASICS       */
+/* ===================================== */
+
+
+/* ===================================== */
+/*        1️⃣ MOBILE FIRST BASE          */
+/* ===================================== */
+/* Default styles = Mobile design */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Mobile Layout */
+.container {
+    display: flex;
+    flex-direction: column;   /* Stack items vertically */
+    gap: 15px;
+    padding: 20px;
+}
+
+.box {
+    background-color: steelblue;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+
+/* ===================================== */
+/*        2️⃣ TABLET BREAKPOINT          */
+/* ===================================== */
+/* When screen ≥ 768px */
+
+@media (min-width: 768px) {
+
+    .container {
+        flex-direction: row;   /* Side by side */
+        flex-wrap: wrap;
+    }
+
+    .box {
+        flex: 1 1 45%;  /* Two boxes per row */
+    }
+}
+
+
+/* ===================================== */
+/*        3️⃣ DESKTOP BREAKPOINT         */
+/* ===================================== */
+/* When screen ≥ 1024px */
+
+@media (min-width: 1024px) {
+
+    .box {
+        flex: 1 1 30%;   /* Three boxes per row */
+    }
+
+    body {
+        background-color: #e0e0e0;
+    }
+}

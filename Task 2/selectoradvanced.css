@@ -1,0 +1,50 @@
+/* ===================================== */
+/*         ADVANCED CSS SELECTORS        */
+/* ===================================== */
+
+
+/* -------- 1️⃣ Universal Selector -------- */
+/* Applies to ALL elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -------- 2️⃣ Attribute Selectors -------- */
+
+/* Select element with specific attribute */
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 5px;
+}
+
+/* Select element with specific attribute value */
+a[target="_blank"] {
+    color: red;
+    text-decoration: none;
+}
+
+/* Select elements that contain a word */
+img[alt] {
+    border: 3px solid green;
+}
+
+
+/* -------- 3️⃣ Combinators -------- */
+
+
+/* Descendant Selector (space) */
+/* Selects all <p> inside div */
+div p {
+    color: purple;
+}
+
+
+/* Child Selector (>) */
+/* Selects only direct child <p> of div */
+div > p {
+    background-color: yellow;
+    padding: 5px;
+}

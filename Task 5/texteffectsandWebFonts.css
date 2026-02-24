@@ -1,0 +1,94 @@
+/* ===================================== */
+/*      TEXT EFFECTS & WEB FONTS        */
+/* ===================================== */
+
+
+/* -------- 1️⃣ Import Google Font -------- */
+/* This must be at the top of CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+/* Apply Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* -------- 2️⃣ Text Shadow -------- */
+
+.text-shadow-light {
+    font-size: 40px;
+    text-shadow: 2px 2px 5px gray;  
+    /* horizontal vertical blur color */
+}
+
+.text-shadow-strong {
+    font-size: 40px;
+    text-shadow: 3px 3px 8px black;
+}
+
+
+/* -------- 3️⃣ Line Height -------- */
+
+.line-height-example {
+    line-height: 1.8;  
+    /* space between lines */
+}
+
+
+/* -------- 4️⃣ Letter Spacing -------- */
+
+.letter-spacing-example {
+    letter-spacing: 3px;  
+    /* space between letters */
+}
+
+
+/* -------- 5️⃣ Word Spacing -------- */
+
+.word-spacing-example {
+    word-spacing: 10px;  
+    /* space between words */
+}
+
+
+/* -------- 6️⃣ Text Transform -------- */
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.lowercase-text {
+    text-transform: lowercase;
+}
+
+.capitalize-text {
+    text-transform: capitalize;
+}
+
+
+/* -------- 7️⃣ Text Decoration -------- */
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.line-through-text {
+    text-decoration: line-through;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+
+/* -------- 8️⃣ Combined Text Effect Example -------- */
+
+.text-effects-box {
+    font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    text-transform: capitalize;
+}

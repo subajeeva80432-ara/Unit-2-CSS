@@ -1,0 +1,101 @@
+/* ==============================
+   CSS UNITS DEMO
+   px | % | em | rem | vw | vh | calc()
+================================= */
+
+/* Root Font Size */
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Viewport Units */
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; /* rem */
+    color: white;
+}
+
+/* Percentage Width */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+/* px Unit */
+.box-px {
+    width: 300px;
+    height: 150px;
+    background: steelblue;
+    margin-bottom: 20px;
+}
+
+/* Percentage Unit */
+.box-percent {
+    width: 60%;
+    height: 120px;
+    background: tomato;
+    margin-bottom: 20px;
+}
+
+/* em Unit (relative to parent) */
+.parent {
+    font-size: 20px;
+}
+
+.child {
+    font-size: 1.5em; /* 1.5 × 20px = 30px */
+    color: purple;
+}
+
+/* rem Unit (relative to html) */
+.rem-text {
+    font-size: 1.5rem; /* 1.5 × 16px = 24px */
+    color: green;
+}
+
+/* vw Unit */
+.vw-text {
+    font-size: 5vw;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* vh Unit */
+.vh-box {
+    height: 30vh;
+    background: teal;
+    margin-bottom: 20px;
+}
+
+/* calc() Usage */
+.calc-box {
+    width: calc(100% - 40px);
+    height: calc(200px + 2rem);
+    padding: 20px;
+    background: gold;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .vw-text {
+        font-size: 8vw;
+    }
+}
